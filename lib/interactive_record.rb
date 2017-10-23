@@ -58,7 +58,7 @@ class InteractiveRecord
       sql = "SELECT * FROM #{self.table_name} WHERE #{property.to_s} = '#{value}';"
       DB[:conn].execute(sql)
       DB[:conn].results_as_hash = true
-    end 
+    end
   end
 
 end
